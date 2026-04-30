@@ -402,16 +402,65 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    gap: 10px;
-    font-size: 13px;
+
+  /* 🔥 NAVBAR FIX */
+  .navbar {
+    padding: 0 15px;
   }
 
   .logo {
     font-size: 18px;
   }
-}
 
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  /* 🔥 HERO FIX */
+  .hero-section {
+    height: 80vh;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    transform: translateY(0); /* ❌ remove that -200px */
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 28px; /* 🔥 reduce size */
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .hero-content button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* 🔥 SEARCH BOX FIX */
+  .search-container {
+    width: 90%;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    transform: translateY(0);
+  }
+
+  .search-container select,
+  .search-container button {
+    width: 100%;
+  }
+
+}
 /* 📱 MOBILE */
 @media (max-width: 768px) {
   .profile-stats {
