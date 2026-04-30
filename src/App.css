@@ -376,6 +376,7 @@ button:hover {
   padding: 20px;
   border-radius: 10px;
   width: 120px;
+  box-shadow: 0 0 15px rgba(255, 100, 0, 0.2);
 }
 
 .stat h3 {
@@ -399,6 +400,10 @@ button:hover {
   padding: 20px;
   border-radius: 10px;
   width: 150px;
+  transition: 0.3s;
+}
+.car-box:hover {
+  transform:scale(1.05);
 }
 
 @media (max-width: 768px) {
@@ -461,16 +466,38 @@ button:hover {
   }
 
 }
-/* 📱 MOBILE */
 @media (max-width: 768px) {
+
+  /* 🔥 PROFILE STATS */
   .profile-stats {
     flex-direction: column;
+    gap: 20px;
     align-items: center;
   }
 
+  .stat {
+    width: 80%;  /* 🔥 full feel */
+    max-width: 300px;
+  }
+
+  /* 🔥 RECENT CARS */
   .recent-cars {
     flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
+
+  .car-box {
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  /* 🔥 TITLE CENTER */
+  .profile-section h2 {
+    text-align: center;
+  }
+
 }
 
 @media (max-width: 768px) {
