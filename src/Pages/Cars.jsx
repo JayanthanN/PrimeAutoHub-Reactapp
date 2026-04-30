@@ -1,5 +1,4 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import{useeffect} from "react";
 import carsData from "../data/carsData";
 
 function Cars() {
@@ -7,9 +6,6 @@ function Cars() {
   const navigate = useNavigate(); // 🔥 THIS WAS MISSING
 
   const cars = location.state || carsData;
-  useEffect(() => {
-  console.log("Cars loaded 🚗");
-}, []);
 
   return (
     <div className="cars-grid">
