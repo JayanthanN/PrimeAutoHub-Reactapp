@@ -1,0 +1,479 @@
+body {
+  margin: 0;
+  padding-top: 70px; /* NAVBAR HEIGHT */
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a2e, #000000);
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 30px;
+  box-sizing: border-box;
+
+  background: rgba(0, 0, 0, 0.4); /* 🔥 transparent */
+  backdrop-filter: blur(10px);   /* 🔥 glass effect */
+  z-index: 1000;
+}
+
+/* LOGO */
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+}
+
+.logo span {
+  color: #ff4d00;
+}
+
+/* LINKS */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto;
+  flex-wrap: nowrap; /* 🔥 prevent breaking */
+}
+
+/* LINK STYLE */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.nav-links a:hover {
+  color: #ff4d00;
+}
+
+/* PROFILE BUTTON */
+.nav-links a:last-child {
+  background: #ff4d00;
+  padding: 6px 14px;
+  border-radius: 6px;
+}
+
+/* HERO SPACE FIX */
+.hero-section {
+  padding-top: 70px;
+}
+
+.cars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 🔥 fixed 4 */
+  gap: 20px;
+  padding: 30px;
+}
+
+.car-card {
+  background: #111;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.car-card:hover {
+  transform: scale(1.05);
+}
+
+.car-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.car-card h3 {
+  padding: 10px;
+}
+
+.car-card button {
+  margin: 10px;
+  background: #ff4d00;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 6px;
+}
+
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.center {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.detail-img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+button {
+  background: linear-gradient(45deg, orange, gold);
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.about-container {
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+/* TITLE */
+.about-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.about-sub {
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.card {
+  background: #111;
+  padding: 25px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255,0,0,0.4);
+}
+
+/* 🔥 Highlight card */
+.card.active {
+  background: red;
+  color: white;
+}
+
+/* STATS */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  gap: 20px;
+}
+
+.stats h2 {
+  color: orange;
+}
+
+/* 🔥 PAGE */
+.contact-page {
+  background: #020617;
+  color: white;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🔴 TOP BANNER */
+.contact-banner {
+  background: linear-gradient(90deg, #ff4d00, #ff7a00);
+  padding: 35px 20px;
+  text-align: center;
+}
+
+.contact-banner h2 {
+  margin-bottom: 10px;
+}
+
+.contact-banner input {
+  padding: 12px;
+  width: 260px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+/* 🔥 MAIN LAYOUT */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 50px;
+  align-items: center;
+}
+
+/* 🧊 FORM BOX */
+.contact-form-box {
+  background: #0f172a;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+
+  max-width: 500px;
+}
+
+/* TITLE */
+.contact-form-box h2 {
+  margin-bottom: 20px;
+}
+
+/* INPUT ROW */
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/* INPUT STYLE (FIXED COLOR 🔥) */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.1);
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+}
+
+/* FOCUS EFFECT */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid #ff7a00;
+  box-shadow: 0 0 10px rgba(255, 122, 0, 0.5);
+}
+
+/* TEXTAREA SIZE FIX 🔥 */
+.contact-form textarea {
+  height: 150px;
+  margin-top: 10px;
+  resize: none;
+}
+
+/* BUTTON */
+.contact-form button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  background: linear-gradient(90deg, #ff4d00, #ff7a00);
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 77, 0, 0.6);
+}
+
+/* 🗺️ MAP */
+.contact-map iframe {
+  width: 100%;
+  height: 420px;
+  border: none;
+  border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+  .car-card {
+    padding: 10px;
+  }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-box {
+    max-width: 100%;
+  }
+
+  .contact-map iframe {
+    height: 300px;
+  }
+}
+
+.profile-page {
+  padding: 50px;
+  background: #020617;
+  color: white;
+  text-align: center;
+}
+
+/* 🔥 USER CARD */
+.profile-card {
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+.avatar {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.profile-card button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: linear-gradient(90deg, #ff4d00, #ff7a00);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+/* 🔥 STATS */
+.profile-stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.stat {
+  background: #422323;
+  padding: 20px;
+  border-radius: 10px;
+  width: 120px;
+}
+
+.stat h3 {
+  color: orange;
+}
+
+/* 🔥 RECENT */
+.profile-section {
+  margin-top: 50px;
+}
+
+.recent-cars {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.car-box {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 150px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .profile-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recent-cars {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cars-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .cars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cars-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1024px) {
+
+  .search-container {
+    width: 80%;              /* 🔥 flexible width */
+    flex-wrap: wrap;         /* 🔥 items break to next line */
+    justify-content: center;
+
+    transform: translateY(-30px); /* 🔥 reduce lift */
+    margin-top: 0;                /* ❌ remove negative */
+    gap: 10px;
+  }
+
+  .search-container select,
+  .search-container button {
+    flex: 1 1 45%; /* 🔥 2 items per row */
+    min-width: 140px;
+  }
+
+}
