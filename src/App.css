@@ -493,7 +493,7 @@ button:hover {
     text-align: center;
   }
 
-
+  
   .profile-section h2 {
     text-align: center;
   }
@@ -537,7 +537,7 @@ button:hover {
 @media (max-width: 1024px) {
 
   .search-container {
-    width: 80%;              
+    width: 80%;           
     flex-wrap: wrap;         
     justify-content: center;
 
