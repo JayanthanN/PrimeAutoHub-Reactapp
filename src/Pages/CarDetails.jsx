@@ -9,14 +9,14 @@ function CarDetails() {
   return (
     <div style={styles.container}>
       
-      {/* 🔥 Image */}
+      
       <img
         src={car.image}
         alt={car.model}
         style={styles.image}
       />
 
-      {/* 🔥 Details */}
+     
       <h1 style={styles.title}>{car.brand} {car.model}</h1>
       <p style={styles.desc}>{car.desc}</p>
       <h2 style={styles.price}>{car.price}</h2>
@@ -30,7 +30,7 @@ const styles = {
     minHeight: "80vh",
     display: "flex",
     flexDirection: "column",
-    alignItems: "center",   // 🔥 center horizontally
+    alignItems: "center",  
     justifyContent: "center",
     textAlign: "center",
     color: "white",
@@ -38,7 +38,7 @@ const styles = {
   },
 
   image: {
-    width: "80%",           // 🔥 bigger image
+    width: "80%",         
     maxWidth: "700px",
     height: "350px",
     objectFit: "cover",

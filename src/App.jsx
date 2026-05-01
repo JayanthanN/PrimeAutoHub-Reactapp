@@ -18,7 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/cars" element={<Cars />} />
         
-        {/* 🔥 Dynamic route */}
+
         <Route path="/cars/:id" element={<CarDetails />} />
         
         <Route path="/contact" element={<Contact />} />

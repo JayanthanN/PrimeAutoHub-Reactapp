@@ -3,7 +3,7 @@ import carsData from "../data/carsData";
 
 function Cars() {
   const location = useLocation();
-  const navigate = useNavigate(); // 🔥 THIS WAS MISSING
+  const navigate = useNavigate(); 
 
   const cars = location.state || carsData;
 

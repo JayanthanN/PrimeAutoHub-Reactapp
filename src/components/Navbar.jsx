@@ -5,6 +5,7 @@ function Navbar() {
   return (
     <motion.nav className="navbar" initial={{ y: -50 }} animate={{ y: 0 }}>
      <h2 className="logo">PRIME<span>AUTO HUB</span></h2>
+     
       <div className="nav-links">
         <Link to="/">Home</Link>
         <Link to="/cars">Cars</Link>

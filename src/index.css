@@ -1,4 +1,4 @@
-/* 🔥 HERO SECTION */
+
 .hero-section {
   height: 90vh;
   background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.2)),
@@ -15,7 +15,7 @@
   color: white;
   max-width: 600px;
 
-  transform: translateY(-200px); /* 🔥 move up */
+  transform: translateY(-200px); 
 }
 .hero-content h1 {
   font-size: 60px;
@@ -56,7 +56,7 @@
   }
 }
 
-/* 🔥 SEARCH BOX */
+
 .search-container {
 position: relative;
 
@@ -65,7 +65,7 @@ position: relative;
   padding: 15px 20px;
 
   width: 100%;
-  max-width: 900px;   /* 🔥 MAIN FIX */
+  max-width: 900px;  
   margin: auto;
 
   background: rgba(255, 255, 255, 0.1);
@@ -102,7 +102,7 @@ position: relative;
 
 
 select option {
-  background: #1e1e1e;  /* 🔥 dark theme */
+  background: #1e1e1e;
   color: white;
 }
 

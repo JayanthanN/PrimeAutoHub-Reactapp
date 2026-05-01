@@ -43,7 +43,7 @@ function Home() {
 
   navigate("/cars", { state: filteredCars });
 
-}, [filters, navigate]); // 🔥 dependency
+}, [filters, navigate]); 
  
 
   return (

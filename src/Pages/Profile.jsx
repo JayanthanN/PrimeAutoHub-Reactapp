@@ -26,7 +26,7 @@ function Profile() {
   return (
     <div className="profile-page">
 
-      {/* 🔥 USER CARD */}
+      
       <div className="profile-card">
         <div className="avatar">👤</div>
 
@@ -38,7 +38,7 @@ function Profile() {
         </button>
       </div>
 
-      {/* 🔥 STATS */}
+     
       <div className="profile-stats">
 
         <div className="stat">
@@ -58,7 +58,6 @@ function Profile() {
 
       </div>
 
-      {/* 🔥 RECENT SECTION */}
       <div className="profile-section">
         <h2>Recent Cars</h2>
 

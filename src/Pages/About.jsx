@@ -2,13 +2,13 @@ function About() {
   return (
    <div className="about-container">
 
-      {/* 🔥 HEADER */}
+     
       <h1 className="about-title">What We Offer</h1>
       <p className="about-sub">
         Premium car showroom experience with top-class services
       </p>
 
-      {/* 🔥 SERVICES */}
+      
       <div className="services">
 
         <div className="card">
@@ -33,7 +33,7 @@ function About() {
 
       </div>
 
-      {/* 🔥 STATS */}
+      
       <div className="stats">
 
         <div>
